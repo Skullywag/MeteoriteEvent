@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>MeteoriteEvent</name>
+	<author>Skullywag</author>
+	<targetVersion>Alpha 11</targetVersion>
+	<description>Adds an event that makes meteorites crash into the Rimworld containing different resources.</description>
+</ModMetaData>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<IncidentDefs>
+
+	<IncidentDef>
+		<defName>BoulderHit</defName>
+		<WorkerClass>IncidentWorker_BoulderHit</WorkerClass>
+		<chance>5.5</chance>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>BoulderMassHit</defName>
+		<WorkerClass>IncidentWorker_BoulderMassHit</WorkerClass>
+		<chance>0.15</chance>
+		<minRefireDays>30</minRefireDays>
+    <category>ThreatBig</category>
+	</IncidentDef>
+
+</IncidentDefs>

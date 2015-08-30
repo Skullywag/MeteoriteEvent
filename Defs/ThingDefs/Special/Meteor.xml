@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>MeteorIncoming</defName>
+    <label>Meteor (incoming)</label>
+    <thingClass>MeteorIncoming</thingClass>
+    <category>Skyfaller</category>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Buildings/GraniteMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <drawOffscreen>true</drawOffscreen>
+  </ThingDef>
+
+  <ThingDef>
+		<defName>Thing_MeteorSpawner</defName>
+    <label>Meteor Spawner</label>
+		<thingClass>Thing_MeteorSpawner</thingClass>
+    <graphicData>
+      <texPath>Meteor/entityspawn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<tickerType>Rare</tickerType>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Meteor</defName>
+		<label>Meteor</label>
+		<thingClass>Meteor</thingClass>
+		<fillPercent>0.50</fillPercent>
+		<tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Buildings/GraniteMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SandstoneBoulder</defName>
+		<label>Sandstone Meteorite</label>
+		<thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/SandstoneMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<pathCost>88</pathCost>
+		<description>A Meteorite Mineable for stone.</description>
+		<building>
+      <isResourceRock>true</isResourceRock>
+			<mineableThing>ChunkSandstone</mineableThing>
+			<mineableYield>1</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+		</building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+	</ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SlateBoulder</defName>
+    <label>Slate Meteorite</label>
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/SlateMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>88</pathCost>
+    <description>A Meteorite Mineable for stone.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkSlate</mineableThing>
+      <mineableYield>1</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>LimestoneBoulder</defName>
+    <label>Limestone Meteorite</label>
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/LimestoneMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>88</pathCost>
+    <description>A Meteorite Mineable for stone.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableYield>1</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>GraniteBoulder</defName>
+    <label>Granite Meteorite</label>
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/GraniteMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>88</pathCost>
+    <description>A Meteorite Mineable for stone.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkGranite</mineableThing>
+      <mineableYield>1</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MarbleBoulder</defName>
+    <label>Marble Meteorite</label>
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/MarbleMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>88</pathCost>
+    <description>A Meteorite Mineable for stone.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkMarble</mineableThing>
+      <mineableYield>1</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+  </ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>MineralBoulder</defName>
+		<label>Mineral Meteorite</label>
+		<thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/MetalMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+    </statBases>
+		<neverMultiSelect>true</neverMultiSelect>
+		<description>A Meteorite Containing trace amounts of Mineral ore.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Steel</mineableThing>
+      <mineableYield>75</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SilverBoulder</defName>
+		<label>Silver Meteorite</label>
+		<thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/SilverMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+		<neverMultiSelect>true</neverMultiSelect>
+		<description>A Meteorite Containing trace amounts of Silver Ore.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Silver</mineableThing>
+      <mineableYield>100</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>UraniumBoulder</defName>
+		<label>Uranium Meteorite</label>
+		<thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/UraniumMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<altitudeLayer>Waist</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+    </statBases>
+		<neverMultiSelect>true</neverMultiSelect>
+		<description>A Meteorite Containing trace amounts of uranium ore.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Uranium</mineableThing>
+      <mineableYield>75</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+	</ThingDef>
+
+</Buildings>

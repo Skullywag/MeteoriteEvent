@@ -1,0 +1,15 @@
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku_000\Desktop\RimWorld857Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku_000\Desktop\RimWorld900WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
