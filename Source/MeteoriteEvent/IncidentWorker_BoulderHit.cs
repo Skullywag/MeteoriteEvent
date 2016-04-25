@@ -16,7 +16,8 @@ namespace RimWorld
                 "MarbleBoulder",
 				"MineralBoulder",
 				"SilverBoulder",
-				"UraniumBoulder"
+				"UraniumBoulder",
+                "JadeBoulder"
 			};
             Random random = new Random();
             int num = random.Next(array.Length);

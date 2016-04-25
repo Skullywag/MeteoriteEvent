@@ -4,13 +4,13 @@
 	<IncidentDef>
 		<defName>BoulderHit</defName>
 		<WorkerClass>IncidentWorker_BoulderHit</WorkerClass>
-		<chance>5.5</chance>
+    <baseChance>5.5</baseChance>
 	</IncidentDef>
 	
 	<IncidentDef>
 		<defName>BoulderMassHit</defName>
 		<WorkerClass>IncidentWorker_BoulderMassHit</WorkerClass>
-		<chance>0.15</chance>
+    <baseChance>0.15</baseChance>
 		<minRefireDays>30</minRefireDays>
     <category>ThreatBig</category>
 	</IncidentDef>

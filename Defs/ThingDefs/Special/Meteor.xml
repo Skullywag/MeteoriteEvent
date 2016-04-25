@@ -8,6 +8,11 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
+    <graphicData>
+      <damageData>
+        <rect>(0.1,0,0.8,0.3)</rect>
+      </damageData>
+    </graphicData>
   </ThingDef>
 
   <ThingDef>
@@ -54,8 +59,40 @@
     </statBases>
 		<selectable>true</selectable>
 	</ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>JadeBoulder</defName>
+    <label>Jade Meteorite</label>
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/JadeMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>88</pathCost>
+    <description>A Meteorite Mineable for Jade.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Jade</mineableThing>
+      <mineableYield>100</mineableYield>
+      <soundMined>CollapseRock</soundMined>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
 		<defName>SandstoneBoulder</defName>
 		<label>Sandstone Meteorite</label>
 		<thingClass>Mineable</thingClass>

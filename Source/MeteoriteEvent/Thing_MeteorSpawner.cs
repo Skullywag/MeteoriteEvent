@@ -44,7 +44,8 @@ namespace RimWorld
                 "MarbleBoulder",
 				"MineralBoulder",
 				"SilverBoulder",
-				"UraniumBoulder"
+				"UraniumBoulder",
+                "JadeBoulder"
 			};
             ThingDef thingDef = ThingDef.Named(array[this.random.Next(array.Length)]);
             List<Thing> list = new List<Thing>();
