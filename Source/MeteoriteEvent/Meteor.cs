@@ -28,11 +28,8 @@ namespace RimWorld
         {
             foreach (Thing current in this.info.containedThings)
             {
-                GenExplosion.DoExplosion(base.Position, 1f, DamageDefOf.Bomb, null, null, null);
-                GenExplosion.DoExplosion(base.Position, 1.5f, DamageDefOf.Bomb, null, null, null);
-                GenExplosion.DoExplosion(base.Position, 2f, DamageDefOf.Bomb, null, null, null);
-                GenExplosion.DoExplosion(base.Position, 4f, DamageDefOf.Flame, null, null, null);
-                GenPlace.TryPlaceThing(current, base.Position, ThingPlaceMode.Near);
+                GenExplosion.DoExplosion(this.Position, this.Map, 1.5f, DamageDefOf.Bomb, null, null, null);
+                GenPlace.TryPlaceThing(current, this.Position, this.Map, ThingPlaceMode.Near);
             }
             this.info.containedThings.Clear();
             if (this.info.leaveSlag)
@@ -40,11 +37,11 @@ namespace RimWorld
                 for (int i = 0; i < 1; i++)
                 {
                     Thing thing = ThingMaker.MakeThing(ThingDef.Named("ChunkSlag"), null);
-                    GenPlace.TryPlaceThing(thing, base.Position, ThingPlaceMode.Near);
+                    GenPlace.TryPlaceThing(thing, base.Position, base.Map, ThingPlaceMode.Near);
                 }
             }
-            SoundStarter.PlayOneShot(Meteor.OpenSound, base.Position);
-            GenExplosion.DoExplosion(base.Position, 4f, DamageDefOf.Flame, null, null, null);
+            Meteor.OpenSound.PlayOneShot(new TargetInfo(this.Position, this.Map, false));
+            GenExplosion.DoExplosion(base.Position, this.Map, 4f, DamageDefOf.Flame, null, null, null);
         }
     }
 }

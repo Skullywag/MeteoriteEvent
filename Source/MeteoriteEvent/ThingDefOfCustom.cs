@@ -7,7 +7,7 @@ namespace RimWorld
         public static ThingDef Meteor;
         public static void RebindDefs()
         {
-            DefOfHelper.BindDefsFor<ThingDef>(typeof(ThingDefOf));
+            DefOfHelper.RebindAllDefOfs(true);
         }
     }
 }

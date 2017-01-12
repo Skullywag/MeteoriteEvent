@@ -12,10 +12,10 @@ namespace RimWorld
         private const int numMinMeteors = 1;
         private int numMeteorEventCount;
         private Random random = new Random();
-        public override void SpawnSetup()
+        public override void SpawnSetup(Map map)
         {
             this.numMeteorEventCount = this.random.Next(numMinEvents, numMaxEvents);
-            base.SpawnSetup();
+            base.SpawnSetup(map);
         }
         public override void TickRare()
         {
@@ -26,6 +26,7 @@ namespace RimWorld
         }
         private void DoMeteorEvent()
         {
+            Map map = base.Map;
             this.numMeteorEventCount--;
             if (this.numMeteorEventCount < 0)
             {
@@ -34,7 +35,7 @@ namespace RimWorld
                 return;
             }
             int num = this.random.Next(numMinMeteors, numMaxMeteors);
-            IntVec3 dropCenter = CellFinderLoose.RandomCellWith((IntVec3 c) => GenGrid.Standable(c) && !Find.RoofGrid.Roofed(c) && !Find.FogGrid.IsFogged(c), 1000);
+            IntVec3 dropCenter = CellFinderLoose.RandomCellWith((IntVec3 c) => GenGrid.Standable(c, map) && !map.roofGrid.Roofed(c) && !map.fogGrid.IsFogged(c), map, 1000);
             string[] array = new string[]
 			{
 				"SandstoneBoulder",
@@ -44,7 +45,9 @@ namespace RimWorld
                 "MarbleBoulder",
 				"MineralBoulder",
 				"SilverBoulder",
-				"UraniumBoulder"
+                "GoldBoulder",
+                "UraniumBoulder",
+                "JadeBoulder"
 			};
             ThingDef thingDef = ThingDef.Named(array[this.random.Next(array.Length)]);
             List<Thing> list = new List<Thing>();
@@ -53,7 +56,7 @@ namespace RimWorld
                 Thing item = ThingMaker.MakeThing(thingDef);
                 list.Add(item);
             }
-            MeteorUtility.DropThingsNear(dropCenter, list, 1, true, false);
+            MeteorUtility.DropThingsNear(dropCenter, map, list, 1, true, false);
         }
     }
 }

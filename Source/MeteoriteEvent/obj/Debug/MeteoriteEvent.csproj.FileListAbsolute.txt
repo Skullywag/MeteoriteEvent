@@ -13,3 +13,49 @@ C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorld1109WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorld1109WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorld1109WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorld1109WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorld1109WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorld1131WinDev\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\Assembly-CSharp.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\UnityEngine.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\NAudio.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent\Source\MeteoriteEvent\bin\Debug\NVorbis.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\Assembly-CSharp.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\UnityEngine.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\NAudio.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\NVorbis.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\obj\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\MeteoriteEvent.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\Assembly-CSharp.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\UnityEngine.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\NAudio.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\NVorbis.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha16Win\RimWorld1393Win\Mods\MeteoriteEvent - A15c\Source\MeteoriteEvent\bin\Debug\UnityEngine.xml

@@ -8,6 +8,11 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
+    <graphicData>
+      <damageData>
+        <rect>(0.1,0,0.8,0.3)</rect>
+      </damageData>
+    </graphicData>
   </ThingDef>
 
   <ThingDef>
@@ -42,20 +47,51 @@
 		<label>Meteor</label>
 		<thingClass>Meteor</thingClass>
 		<fillPercent>0.50</fillPercent>
-		<tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Buildings/GraniteMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
     </statBases>
 		<selectable>true</selectable>
+    <tickerType>Normal</tickerType>
 	</ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>JadeBoulder</defName>
+    <label>Jade Meteorite</label>
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/JadeMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <pathCost>88</pathCost>
+    <description>A Meteorite Mineable for Jade.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Jade</mineableThing>
+      <mineableYield>100</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
 		<defName>SandstoneBoulder</defName>
 		<label>Sandstone Meteorite</label>
 		<thingClass>Mineable</thingClass>
@@ -63,7 +99,7 @@
       <texPath>Things/Buildings/SandstoneMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
@@ -79,7 +115,6 @@
       <isResourceRock>true</isResourceRock>
 			<mineableThing>ChunkSandstone</mineableThing>
 			<mineableYield>1</mineableYield>
-      <soundMined>CollapseRock</soundMined>
 			<mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
 		</building>
     <filthLeaving>RockRubble</filthLeaving>
@@ -94,7 +129,7 @@
       <texPath>Things/Buildings/SlateMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <altitudeLayer>Waist</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
@@ -110,7 +145,6 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkSlate</mineableThing>
       <mineableYield>1</mineableYield>
-      <soundMined>CollapseRock</soundMined>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
     </building>
     <filthLeaving>RockRubble</filthLeaving>
@@ -125,7 +159,7 @@
       <texPath>Things/Buildings/LimestoneMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <altitudeLayer>Waist</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
@@ -141,7 +175,6 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkLimestone</mineableThing>
       <mineableYield>1</mineableYield>
-      <soundMined>CollapseRock</soundMined>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
     </building>
     <filthLeaving>RockRubble</filthLeaving>
@@ -156,7 +189,7 @@
       <texPath>Things/Buildings/GraniteMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <altitudeLayer>Waist</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
@@ -172,7 +205,6 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkGranite</mineableThing>
       <mineableYield>1</mineableYield>
-      <soundMined>CollapseRock</soundMined>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
     </building>
     <filthLeaving>RockRubble</filthLeaving>
@@ -187,7 +219,7 @@
       <texPath>Things/Buildings/MarbleMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <altitudeLayer>Waist</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
@@ -203,7 +235,6 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>ChunkMarble</mineableThing>
       <mineableYield>1</mineableYield>
-      <soundMined>CollapseRock</soundMined>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
     </building>
     <filthLeaving>RockRubble</filthLeaving>
@@ -218,7 +249,7 @@
       <texPath>Things/Buildings/MetalMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
@@ -232,7 +263,6 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>Steel</mineableThing>
       <mineableYield>75</mineableYield>
-      <soundMined>CollapseRock</soundMined>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
     </building>
     <filthLeaving>RockRubble</filthLeaving>
@@ -247,7 +277,7 @@
       <texPath>Things/Buildings/SilverMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
@@ -261,12 +291,39 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>Silver</mineableThing>
       <mineableYield>100</mineableYield>
-      <soundMined>CollapseRock</soundMined>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
     </building>
     <filthLeaving>RockRubble</filthLeaving>
     <mineable>true</mineable>
 	</ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>GoldBoulder</defName>
+    <label>Gold Meteorite</label>
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/GoldMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <coversFloor>true</coversFloor>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <neverMultiSelect>true</neverMultiSelect>
+    <description>A Meteorite Containing trace amounts of gold Ore.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Gold</mineableThing>
+      <mineableYield>100</mineableYield>
+      <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
+    </building>
+    <filthLeaving>RockRubble</filthLeaving>
+    <mineable>true</mineable>
+  </ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>UraniumBoulder</defName>
@@ -276,7 +333,7 @@
       <texPath>Things/Buildings/UraniumMeteor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<altitudeLayer>Waist</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.5</fillPercent>
@@ -290,7 +347,6 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>Uranium</mineableThing>
       <mineableYield>75</mineableYield>
-      <soundMined>CollapseRock</soundMined>
       <mineableNonMinedEfficiency>0.8</mineableNonMinedEfficiency>
     </building>
     <filthLeaving>RockRubble</filthLeaving>

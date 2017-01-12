@@ -7,13 +7,13 @@ namespace RimWorld
     public static class MeteorUtility
     {
         private static List<List<Thing>> tempList = new List<List<Thing>>();
-        public static void MakeMeteorAt(IntVec3 loc, MeteorInfo info)
+        public static void MakeMeteorAt(IntVec3 loc, Map map, MeteorInfo info)
         {
             MeteorIncoming meteorIncoming = (MeteorIncoming)ThingMaker.MakeThing(ThingDef.Named("MeteorIncoming"));
             meteorIncoming.contents = info;
-            GenSpawn.Spawn(meteorIncoming, loc);
+            GenSpawn.Spawn(meteorIncoming, loc, map);
         }
-        public static void DropThingsNear(IntVec3 dropCenter, IEnumerable<Thing> things, int openDelay = 110, bool canInstaDropDuringInit = true, bool leaveSlag = false)
+        public static void DropThingsNear(IntVec3 dropCenter, Map map, IEnumerable<Thing> things, int openDelay = 110, bool canInstaDropDuringInit = true, bool leaveSlag = false)
         {
             foreach (Thing current in things)
             {
@@ -21,15 +21,15 @@ namespace RimWorld
                 list.Add(current);
                 MeteorUtility.tempList.Add(list);
             }
-            MeteorUtility.DropThingGroupsNear(dropCenter, MeteorUtility.tempList, openDelay, canInstaDropDuringInit, leaveSlag);
+            MeteorUtility.DropThingGroupsNear(dropCenter, map, MeteorUtility.tempList, openDelay, canInstaDropDuringInit, leaveSlag);
             MeteorUtility.tempList.Clear();
         }
-        public static void DropThingGroupsNear(IntVec3 dropCenter, List<List<Thing>> thingsGroups, int openDelay = 110, bool canInstaDropDuringInit = true, bool leaveSlag = false, bool canRoofPunch = true)
+        public static void DropThingGroupsNear(IntVec3 dropCenter, Map map, List<List<Thing>> thingsGroups, int openDelay = 110, bool canInstaDropDuringInit = true, bool leaveSlag = false, bool canRoofPunch = true)
         {
             foreach (List<Thing> current in thingsGroups)
             {
                 IntVec3 intVec;
-                if (!DropCellFinder.TryFindDropSpotNear(dropCenter, out intVec, true, canRoofPunch))
+                if (!DropCellFinder.TryFindDropSpotNear(dropCenter, map, out intVec, true, canRoofPunch))
                 {
                     Log.Warning(string.Concat(new object[]
 					{
@@ -39,7 +39,7 @@ namespace RimWorld
 						dropCenter,
 						". Dropping on random square instead."
 					}));
-                    intVec = CellFinderLoose.RandomCellWith((IntVec3 c) => c.Walkable(), 1000);
+                    intVec = CellFinderLoose.RandomCellWith((IntVec3 c) => c.Walkable(map), map, 1000);
                 }
                 for (int i = 0; i < current.Count; i++)
                 {
@@ -49,7 +49,7 @@ namespace RimWorld
                 {
                     foreach (Thing current2 in current)
                     {
-                        GenPlace.TryPlaceThing(current2, intVec, ThingPlaceMode.Near);
+                        GenPlace.TryPlaceThing(current2, intVec, map, ThingPlaceMode.Near);
                     }
                 }
                 else
@@ -61,7 +61,7 @@ namespace RimWorld
                     }
                     dropPodInfo.openDelay = openDelay;
                     dropPodInfo.leaveSlag = leaveSlag;
-                    MeteorUtility.MakeMeteorAt(intVec, dropPodInfo);
+                    MeteorUtility.MakeMeteorAt(intVec, map, dropPodInfo);
                 }
             }
         }

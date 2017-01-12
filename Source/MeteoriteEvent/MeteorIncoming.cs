@@ -4,6 +4,7 @@ using Verse;
 using Verse.Sound;
 namespace RimWorld
 {
+    [StaticConstructorOnStartup]
     public class MeteorIncoming : Thing
     {
         protected const int MinTicksToImpact = 120;
@@ -25,9 +26,9 @@ namespace RimWorld
 				return result;
 			}
 		}
-        public override void SpawnSetup()
+        public override void SpawnSetup(Map map)
         {
-            base.SpawnSetup();
+            base.SpawnSetup(map);
             this.ticksToImpact = Rand.RangeInclusive(120, 200);
         }
         public override void ExposeData()
@@ -38,8 +39,8 @@ namespace RimWorld
         }
         public override void Tick()
         {
-            MoteThrower.ThrowSmoke(DrawPos, 1f);
-            MoteThrower.ThrowLightningGlow(DrawPos, 1f);
+            MoteMaker.ThrowSmoke(DrawPos, base.Map, 1f);
+            MoteMaker.ThrowLightningGlow(DrawPos, base.Map, 1f);
             this.ticksToImpact--;
             if (this.ticksToImpact <= 0)
             {
@@ -48,7 +49,7 @@ namespace RimWorld
             if (!this.soundPlayed && this.ticksToImpact < 100)
             {
                 this.soundPlayed = true;
-                SoundStarter.PlayOneShot(MeteorIncoming.LandSound, base.Position);
+                MeteorIncoming.LandSound.PlayOneShot(new TargetInfo(this.Position, this.Map, false));
             }
         }
 
@@ -68,12 +69,12 @@ namespace RimWorld
             for (int i = 0; i < 6; i++)
             {
                 Vector3 spawnLoc = base.Position.ToVector3Shifted() + Gen.RandomHorizontalVector(1f);
-                MoteThrower.ThrowDustPuff(spawnLoc, 1.2f);
+                MoteMaker.ThrowDustPuff(spawnLoc, base.Map, 1.2f);
             }
-            MoteThrower.ThrowLightningGlow(base.Position.ToVector3Shifted(), 2f);
+            MoteMaker.ThrowLightningGlow(base.Position.ToVector3Shifted(), base.Map, 2f);
             Meteor meteor = (Meteor)ThingMaker.MakeThing(ThingDef.Named("Meteor"));
             meteor.info = this.contents;
-            GenSpawn.Spawn(meteor, base.Position, this.Rotation);
+            GenSpawn.Spawn(meteor, base.Position, base.Map, this.Rotation);
             this.Destroy(DestroyMode.Vanish);
         }
     }
